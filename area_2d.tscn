@@ -6,6 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fd6m3"]
 size = Vector2(489.5, 1094)
 
+[node name="Area2D" type="Area2D" unique_id=1991694375]
 script = ExtResource("1_dl81w")
 
 [node name="PlayerGreyUp1" type="Sprite2D" parent="." unique_id=1806350457]
