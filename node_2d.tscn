@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://drmu5sv0gm4ny"]
+
+[ext_resource type="Script" uid="uid://ccak4bqxhicsq" path="res://character.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://bcow5c46vixno" path="res://assets/playerGrey_up1.png" id="1_wtcfe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fd6m3"]
+size = Vector2(110, 130)
+
+[node name="Node2D" type="Node2D" unique_id=1291024540]
+script = ExtResource("1_0e48y")
+
+[node name="PlayerGreyUp1" type="Sprite2D" parent="." unique_id=1233046370]
+texture = ExtResource("1_wtcfe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=737055884]
+position = Vector2(144, -14)
+shape = SubResource("RectangleShape2D_fd6m3")

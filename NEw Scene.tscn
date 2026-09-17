@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dariniqixq3rt"]
+
+[ext_resource type="Texture2D" uid="uid://dun74wipekpfq" path="res://assets/enemyFlyingAlt_1.png" id="1_las03"]
+[ext_resource type="Texture2D" uid="uid://bcow5c46vixno" path="res://assets/playerGrey_up1.png" id="1_ptrac"]
+[ext_resource type="Script" uid="uid://dyas51yi12fsd" path="res://movement.gd" id="2_003wg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fd6m3"]
+radius = 46.043457
+
+[node name="Node2D" type="Node2D" unique_id=1141786221]
+position = Vector2(321, 134)
+
+[node name="PlayerGreyUp1" type="Sprite2D" parent="." unique_id=718250306]
+position = Vector2(342, 258)
+texture = ExtResource("1_ptrac")
+script = ExtResource("2_003wg")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=411377387]
+
+[node name="EnemyFlyingAlt2" type="Sprite2D" parent="RigidBody2D" unique_id=674507290]
+texture = ExtResource("1_las03")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=372654394]
+position = Vector2(13, 1)
+shape = SubResource("CircleShape2D_fd6m3")
